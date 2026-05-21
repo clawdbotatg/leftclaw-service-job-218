@@ -5,6 +5,7 @@ import type { NextPage } from "next";
 import { formatUnits, parseUnits } from "viem";
 import { useAccount, useSwitchChain } from "wagmi";
 import { base } from "viem/chains";
+import { Address } from "@scaffold-ui/components";
 import { RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 import { useScaffoldReadContract, useScaffoldWriteContract, useWriteAndOpen } from "~~/hooks/scaffold-eth";
 import { notification } from "~~/utils/scaffold-eth";
@@ -263,6 +264,10 @@ const HomeContent = () => {
           Burn 50,000 CLAWD to mint your unique Pizza Day slice on Base.
         </p>
         <EventCountdown />
+        <div className="flex items-center gap-2 justify-center text-sm opacity-60 mt-2">
+          <span>Contract:</span>
+          <Address address={CONTRACT_ADDRESS} />
+        </div>
       </div>
 
       <div className="card bg-base-100 shadow-xl w-full max-w-2xl">
