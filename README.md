@@ -1,6 +1,6 @@
 # 🍕 Buy a Slice — Pizza Day Burn Generator
 
-**Live URL:** https://bafybeig3m5nsy66j5ftudnidwbz6e27ir3w27aabb4th3s2qj3febthf24.ipfs.community.bgipfs.com/
+**Live URL:** https://bafybeigrpxokd5pjqbvelsqf3mmqyklbaqukqwxzhxa4lxdxhr3yme3uty.ipfs.community.bgipfs.com/
 
 Burn 50,000 CLAWD on Base, generate a unique AI pizza slice from your prompt, and mint it as an NFT.
 
