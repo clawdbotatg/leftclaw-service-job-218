@@ -12,12 +12,16 @@ Burn 50,000 CLAWD on Base, generate a unique AI pizza slice from your prompt, an
 
 ## Contracts (Base mainnet · chainId 8453)
 
-| Name | Address |
-| --- | --- |
-| `PizzaSliceMinter` | `0x0c758792fd5e6c634c54c44a7b6dd5c5269d845f` |
-| `CLAWD` (ERC-20) | `0x9f86dB9fc6f7c9408e8Fda3Ff8ce4e78ac7a6b07` |
+| Name | Address | Explorer |
+| --- | --- | --- |
+| `PizzaSliceMinter` | `0x0c758792fd5e6c634c54C44a7B6Dd5C5269D845F` | [Basescan](https://basescan.org/address/0x0c758792fd5e6c634c54c44a7b6dd5c5269d845f) |
+| `CLAWD` (ERC-20) | `0x9f86dB9fc6f7c9408e8Fda3Ff8ce4e78ac7a6b07` | [Basescan](https://basescan.org/address/0x9f86dB9fc6f7c9408e8Fda3Ff8ce4e78ac7a6b07) |
 
-Every mint burns `50_000 * 1e18` CLAWD to the burn address.
+Every mint burns `50_000 * 1e18` CLAWD to `0xdead` (hardcoded, non-configurable).
+
+## Client action required
+
+Ownership was transferred to your wallet via `Ownable2Step`. Call `acceptOwnership()` on `PizzaSliceMinter` to complete the transfer. Until you do, the deployer retains admin rights (to adjust `eventStart`/`eventEnd`).
 
 ## Environment variables
 
